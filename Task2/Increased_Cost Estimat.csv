@@ -1,0 +1,30 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,19328.01,231936.12,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),web server,Amazon EC2 ,0,3839.8,46077.6,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,421,5052,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations (1)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,157.86,1894.32,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),app server,Amazon EC2 ,0,1189.9,14278.8,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,4701.86,56422.32,USD,,"Data transfer out to internet (10 TB per month), Data transfer out to origin (10 TB per month), Number of requests (HTTPS) (500000 per month), Data transfer out to internet (10 TB per month), Data transfer out to origin (10 TB per month), Number of requests (HTTPS) (500000 per month), Data transfer out to internet (10 TB per month), Data transfer out to origin (10 TB per month), Number of requests (HTTPS) (500000 per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,1180.3,14163.6,USD,,"S3 Standard storage (50 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (500000), GET, SELECT, and all other requests from S3 Standard (500000)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,921.6,11059.2,USD,,"DT Inbound: Internet (10 TB per month), DT Outbound: Internet (10 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,44.53,534.36,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,6688.16,80257.92,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5d.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (2), Number of EIPs per instance (10)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+Amazon EC2 for web server: inscrease instance from m5.2xlarge to m4.xlarge ,,,,,,,,,
+Amazon EC2 for app server: inscrease instance from m5.2xlarge to m5.4xlarge ,,,,,,,,,
+Amazon CloudFront: inscrease 10TB per month for data transfer out to internet,,,,,,,,,
+S3 Standard: inscrease storage from 10TB to 50TB per month,,,,,,,,,
+Amazon RDS for MySQL: inscrease additional backup storage (10 TB),,,,,,,,,
+"We decided to make some changes to our AWS resources to optimize our performance and cost. For our web server, we switched from an m5.2xlarge to an m4.xlarge EC2 instance,  because we found that we didn't need the extra memory and network bandwidth of the m5 family. For our app server, we upgraded from an m5.2xlarge to an m5.4xlarge EC2 instance, because we needed more compute power and scalability for our growing application. We also increased our CloudFront data transfer out to the internet by 10 TB per month, to improve the speed and availability of our content delivery to our global customers. Additionally, we increased our S3 Standard storage from 10 TB to 50 TB per month, to store more data and backups in a durable and cost-effective way. Finally, we increased our RDS for MySQL backup storage by 10 TB, to ensure that we have enough space to restore our database in case of any failure or disaster.",,,,,,,,,
