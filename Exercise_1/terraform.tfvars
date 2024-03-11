@@ -1,0 +1,1 @@
+vpc_security_group_ids = ["sg-05b9a87be5fc17a7c"]
